@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<host-apdu-service xmlns:android="http://schemas.android.com/apk/res/android"
+    android:description="@string/servicedesc"
+    android:requireDeviceUnlock="false"
+    android:apduServiceBanner="@drawable/cloud_pay">
+
+    <aid-group
+        android:category="payment"
+        android:description="@string/aiddescription" >
+        <aid-filter android:name="57485041592E4843452E4444463031" />
+    </aid-group>
+</host-apdu-service>

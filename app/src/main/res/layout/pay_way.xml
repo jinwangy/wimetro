@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/header_base"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请选定乘车方式:"
+        android:textSize="15sp"
+        android:layout_marginTop="15dip"
+        android:layout_marginLeft="12.0dip"/>
+
+    <RelativeLayout android:id="@+id/choose_qrcode_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@color/white"
+        android:layout_marginTop="10dip">
+
+
+        <CheckBox android:id="@+id/choose_qrcode_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dip"
+            android:button="@drawable/checkbox_style" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="45dip"
+            android:text="二维码"
+
+            android:drawablePadding="8.0dip"
+            android:drawableLeft="@drawable/sz_qrcode_ride"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout android:id="@+id/choose_nfc_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@color/white"
+        android:layout_marginTop="5dip">
+
+        <CheckBox android:id="@+id/choose_nfc_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dip"
+            android:button="@drawable/checkbox_style" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="45dip"
+            android:text="NFC"
+            android:drawablePadding="8.0dip"
+            android:drawableLeft="@drawable/sz_nfc_ride"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

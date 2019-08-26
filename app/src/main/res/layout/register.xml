@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#f0f4f4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/header_base"/>
+
+    <EditText
+        android:id="@+id/userName_et"
+        android:layout_width="match_parent"
+        android:layout_height="60.0dip"
+        android:layout_marginTop="15.0dip"
+        android:background="#ffffff"
+        android:drawablePadding="10.0dip"
+        android:digits="1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:hint="请输入用户名(4-16位字母或数字)"
+        android:paddingBottom="2.0dip"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="15.0dip"
+        android:paddingTop="2.0dip"
+        android:drawableLeft="@drawable/account_login"
+        android:maxLines="1"
+        android:maxLength="16"
+        android:textColorHint="#ff999999"
+        android:textSize="16.0sp" />
+
+    <TextView style="@style/line"
+        android:layout_height="1dp"
+        android:background="#e1dfda"/>
+
+    <EditText
+        android:id="@+id/register_pwd_et"
+        android:layout_width="match_parent"
+        android:layout_height="60.0dip"
+        android:background="#ffffff"
+        android:drawablePadding="10.0dip"
+        android:digits="1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:hint="请输入登录密码(4-12位字母或数字)"
+        android:inputType="textPassword"
+        android:paddingBottom="2.0dip"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="15.0dip"
+        android:paddingTop="2.0dip"
+        android:drawableLeft="@drawable/password_login"
+        android:maxLines="1"
+        android:maxLength="12"
+        android:textColorHint="#ff999999"
+        android:textSize="16.0sp" />
+
+    <TextView style="@style/line"
+        android:layout_height="1dp"
+        android:background="#e1dfda"/>
+
+    <EditText
+        android:id="@+id/confirm_pwd_et"
+        android:layout_width="match_parent"
+        android:layout_height="60.0dip"
+        android:background="#ffffff"
+        android:drawablePadding="10.0dip"
+        android:digits="1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:hint="请再次输入登录密码"
+        android:inputType="textPassword"
+        android:paddingBottom="2.0dip"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="15.0dip"
+        android:paddingTop="2.0dip"
+        android:drawableLeft="@drawable/password_login"
+        android:maxLines="1"
+        android:maxLength="12"
+        android:textColorHint="#ff999999"
+        android:textSize="16.0sp" />
+
+    <EditText
+        android:id="@+id/register_number_et"
+        android:layout_width="match_parent"
+        android:layout_height="60.0dip"
+        android:layout_marginTop="10dip"
+        android:background="#ffffff"
+        android:drawablePadding="8.0dip"
+        android:digits="1234567890"
+        android:hint="请输入手机号码"
+        android:paddingBottom="2.0dip"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="15.0dip"
+        android:paddingTop="2.0dip"
+        android:drawableLeft="@drawable/phone"
+        android:maxLines="1"
+        android:maxLength="11"
+        android:textColorHint="#ff999999"
+        android:textSize="16.0sp" />
+
+    <TextView style="@style/line"
+        android:layout_height="1dp"
+        android:background="#e1dfda"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/checkcode_et"
+            android:layout_width="200dip"
+            android:layout_height="60dip"
+            android:background="#ffffff"
+            android:drawablePadding="10.0dip"
+            android:digits="1234567890"
+            android:hint="请输入短信验证码"
+            android:paddingBottom="2.0dip"
+            android:paddingLeft="15.0dip"
+            android:paddingRight="15.0dip"
+            android:paddingTop="2.0dip"
+            android:drawableLeft="@drawable/validate"
+            android:maxLines="1"
+            android:maxLength="6"
+            android:textColorHint="#ff999999"
+            android:textSize="16.0sp" />
+
+        <Button
+            android:id="@+id/getCheckCode_btn"
+            android:layout_width="0dip"
+            android:layout_height="50dip"
+            android:layout_weight="1"
+            android:layout_margin="5dip"
+            android:layout_gravity="center"
+            android:background="@drawable/shape_border"
+            android:textColor="@color/bg_btn_green"
+            android:text="获取验证码"/>
+
+    </LinearLayout>
+
+    <Button android:id="@+id/submit_register_btn"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        style="@style/greenButton"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape"
+        android:text="提交注册" />
+
+    <TextView android:id="@+id/account_login_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15.0dip"
+        android:gravity="center"
+        android:autoLink="all"
+        android:textColor="#00a2e7"
+        android:text="已有账号登录"
+        android:textSize="15.0sp"/>
+
+</LinearLayout>

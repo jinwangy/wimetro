@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/header_base"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请绑定支付方式"
+        android:textSize="15sp"
+        android:layout_marginTop="15dip"
+        android:layout_marginLeft="12.0dip"/>
+
+    <RelativeLayout android:id="@+id/wechat_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@color/white"
+        android:layout_marginTop="10dip">
+
+
+        <CheckBox android:id="@+id/wechat_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dip"
+            android:button="@drawable/checkbox_style"
+
+            android:checked="false"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="45dip"
+            android:text="微信账户"
+
+            android:drawablePadding="8.0dip"
+            android:drawableLeft="@drawable/wechat"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout android:id="@+id/alipy_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@color/white"
+        android:layout_marginTop="5dip">
+
+        <CheckBox android:id="@+id/alipy_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dip"
+            android:button="@drawable/checkbox_style"
+            android:checked="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="45dip"
+            android:text="支付宝账户"
+            android:drawablePadding="8.0dip"
+            android:drawableLeft="@drawable/alipy"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout android:id="@+id/eBank_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@color/white"
+        android:layout_marginTop="5dip">
+
+        <CheckBox android:id="@+id/eBank_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dip"
+            android:button="@drawable/checkbox_style"
+            android:enabled="false"
+            android:checked="false"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="45dip"
+            android:text="工银e支付"
+            android:textColor="@color/text_gray"
+            android:drawablePadding="8.0dip"
+            android:drawableLeft="@drawable/ebank_disable"/>
+
+    </RelativeLayout>
+
+    <Button android:id="@+id/go_bind_btn"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        style="@style/greenButton"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape"
+        android:text="立即绑定" />
+
+</LinearLayout>

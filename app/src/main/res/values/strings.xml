@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">手机过闸</string>
+    <string name="servicedesc">手机过闸支付</string>
+    <string name="aiddescription">手机过闸AID</string>
+
+    <string name="login_user">请输入用户名或手机号码</string>
+    <string name="login_password">请输入登录密码</string>
+    <string name="login_phone">请输入手机号</string>
+    <string name="login_check">请输入验证码</string>
+    <string name="login_button">登录</string>
+
+    <string name="want_register"><u>注册账户</u></string>
+    <string name="forget_password"><u>忘记密码</u></string>
+
+    <string name="back">返回</string>
+    <string name="sure">确认</string>
+
+    <string name="reg_send_code">重新发送</string>
+    <string name="msg_error_response">服务器响应异常</string>
+    <string name="msg_error_network">网络不给力，请稍后再试&#8230;</string>
+    <string name="msg_error_no_data">服务器暂无响应，请稍候重试</string>
+    <string name="msg_no_network">当前网络无连接，请检查您的网络设置！</string>
+
+    <string name="expired_sessionkey">会话已过期，请重新登录！</string>
+    <string name="empty_data">暂无内容</string>
+
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新...</string>
+    <string name="refresh_succeed">刷新完成</string>
+    <string name="refresh_fail">刷新失败</string>
+    <string name="pullup_to_load">上拉加载更多</string>
+    <string name="release_to_load">释放立即加载</string>
+    <string name="loading">正在加载...</string>
+    <string name="load_succeed">加载完成</string>
+    <string name="load_fail">加载失败</string>
+    <string name="more">更多</string>
+
+    <string name="cloud_card">云卡</string>
+    <string name="line_map_01">线路查询</string>
+    <string name="ar_find_subway">车站信息</string>
+    <string name="buy_ticket">时刻表</string>
+    <string name="station_info">出行指引</string>
+    <string name="station_facility">我的订单</string>
+
+    <string name="customer_board">客户留言板</string>
+    <string name="subway_museum">地铁博物馆</string>
+    <string name="passenger_situation">客流实况</string>
+    <string name="more_function">多功能</string>
+    <string name="reg_pwd_hint">请设置密码</string>
+    <string name="reg_pwd">密码</string>
+    <string name="reg_pwd_limit1">请输入长度为6-16的查询密码</string>
+    <string name="reg_pwd_limit2">请输入长度为6-16的支付密码</string>
+    <string name="error_not_empty">不能为空</string>
+    <string name="phone_not_empty">手机号码不能为空</string>
+    <string name="username_not_empty">用户名不能为空</string>
+    <string name="checkcode_not_empty">短信验证码不能为空</string>
+    <string name="comfirm_password_not_empty">确认密码不能为空</string>
+    <string name="password_not_empty">密码不能为空</string>
+    <string name="code_not_empty">验证码不能为空</string>
+    <string name="user_not_empty">用户名不能为空</string>
+    <string name="msg_are_you_sure_to_exit_app">再次点击返回退出程序</string>
+
+    <string name="versionchecklib_confirm">确认</string>
+    <string name="versionchecklib_cancel">取消</string>
+    <string name="versionchecklib_retry">重试</string>
+    <string name="versionchecklib_download_fail_retry">下载失败是否重试？</string>
+    <string name="versionchecklib_download_finish">下载完成，点击安装</string>
+    <string name="versionchecklib_downloading">正在下载中...</string>
+    <string name="versionchecklib_check_new_version">检测到新版本</string>
+    <string name="versionchecklib_download_progress">下载进度:%d%%/100%%</string>
+    <string name="versionchecklib_download_fail">下载失败，点击重试</string>
+    <string name="versionchecklib_progress">%d/100</string>
+    <string name="versionchecklib_write_permission_deny">下载安装包需要读写文件权限。</string>
+    <string name="versionchecklib_download_apkname">%s.apk</string>
+    <string name="devices_list">VTR-AL00,STF-AL00,MHA-AL00,STF-AL10,DUK-AL20,M7,PRO 5,SM-G9280,SM-C7010,SM-A9100,SM-G9208,SM-C7000,
+    SM-G9300,SM-C9000,SM-G9350,SM-N9150,SM-N9200,A5100,SM-A9000,SM-C5000,SM-G9550,SM-J3300,SM-N900,MI 3C,MI 3W</string>
+
+</resources>

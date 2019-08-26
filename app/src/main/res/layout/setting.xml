@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f3f2f1"
+    android:orientation="vertical">
+
+    <include layout="@layout/header_base"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_marginTop="10dip"
+        android:background="@color/white">
+        <TextView android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:textSize="14sp"
+            android:text="修改个人信息"
+            android:gravity="center_vertical"
+            android:drawablePadding="5dip"
+            android:drawableLeft="@drawable/sz_info"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="20dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dip"
+            android:src="@drawable/right_jt"/>
+    </RelativeLayout>
+
+    <TextView style="@style/line"
+        android:layout_height="1dp"
+        android:background="#e1dfda"/>
+
+    <RelativeLayout android:id="@+id/payway_rl"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:background="@color/white">
+
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="设置默认乘车方式"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="20dip"
+            android:layout_marginLeft="20dip"
+            android:textSize="14sp"
+            android:drawablePadding="5dip"
+            android:drawableLeft="@drawable/sz_ride_way"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="20dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dip"
+            android:src="@drawable/right_jt"/>
+    </RelativeLayout>
+
+    <TextView style="@style/line"
+        android:layout_height="1dp"
+        android:background="#e1dfda"/>
+
+    <RelativeLayout android:id="@+id/set_rl"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:background="@color/white">
+
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="解除绑定"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="20dip"
+            android:layout_marginLeft="20dip"
+            android:textSize="14sp"
+            android:drawablePadding="5dip"
+            android:drawableLeft="@drawable/sz_unbind"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="20dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dip"
+            android:src="@drawable/right_jt"/>
+    </RelativeLayout>
+
+    <TextView style="@style/line"
+        android:layout_height="1dp"
+        android:background="#e1dfda"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:background="@color/white">
+        <TextView android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:textSize="14sp"
+            android:text="版本信息"
+            android:gravity="center_vertical"
+            android:drawablePadding="5dip"
+            android:drawableLeft="@drawable/sz_version"/>
+        <TextView android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:id="@+id/version_name_tv"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dip"
+            android:textSize="14sp"
+            android:gravity="center_vertical"
+            android:background="@color/white"/>
+    </RelativeLayout>
+
+    <Button android:id="@+id/login_out_btn"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        style="@style/greenButton"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape"
+        android:text="退出登录" />
+
+
+
+</LinearLayout>

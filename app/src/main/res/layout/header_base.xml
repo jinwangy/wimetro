@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/headerBgStyle"
+    android:id="@+id/header_rl">
+
+    <LinearLayout
+        android:id="@+id/top_left_btn"
+        style="@style/headerImageButton"
+        android:paddingLeft="8dp" >
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:contentDescription="@null"
+            android:src="@drawable/back" />
+
+        <TextView
+            style="@style/headerLeftBack"
+            android:textColor="@color/white"
+            android:text="@string/back" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/top_center_view"
+        style="@style/headerTitle"
+        android:textColor="@color/white" />
+
+    <ImageButton
+        android:id="@+id/top_right_view"
+        style="@style/headerButton.right"
+        android:textColor="@color/white" />
+
+    <include layout="@layout/header_shadow" />
+
+</RelativeLayout>

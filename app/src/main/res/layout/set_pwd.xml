@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/header_base"/>
+
+    <LinearLayout android:id="@+id/pwd_set_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dip"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dip"
+            android:layout_marginLeft="25dip"
+            android:layout_marginRight="30dip"
+            android:drawablePadding="8.0dip"
+            android:text="您的手机验证已经通过,请立即修改您的登录密码!"
+            android:textSize="16sp"
+            android:drawableLeft="@drawable/check_ok"/>
+
+        <TextView style="@style/line"
+            android:layout_height="1dp"
+            android:layout_marginTop="15.0dip"
+            android:background="#e1dfda"/>
+
+        <EditText
+            android:id="@+id/pwd_set_et"
+            android:layout_width="match_parent"
+            android:layout_height="60.0dip"
+            android:layout_marginLeft="12.0dip"
+            android:layout_marginRight="12.0dip"
+            android:background="#ffffff"
+            android:drawablePadding="10.0dip"
+            android:digits="1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:hint="请输入您的新密码"
+            android:inputType="textPassword"
+            android:paddingBottom="2.0dip"
+            android:paddingLeft="15.0dip"
+            android:paddingRight="15.0dip"
+            android:paddingTop="2.0dip"
+            android:drawableLeft="@drawable/password_login"
+            android:maxLines="1"
+            android:maxLength="12"
+            android:textColorHint="#ff999999"
+            android:textSize="16.0sp" />
+
+        <TextView style="@style/line"
+            android:layout_height="1dp"
+            android:background="#e1dfda"/>
+
+        <EditText
+            android:id="@+id/confirm_pwd_set_et"
+            android:layout_width="match_parent"
+            android:layout_height="60.0dip"
+            android:layout_marginLeft="12.0dip"
+            android:layout_marginRight="12.0dip"
+            android:background="#ffffff"
+            android:drawablePadding="10.0dip"
+            android:digits="1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:hint="请再次输入您的新密码"
+            android:inputType="textPassword"
+            android:paddingBottom="2.0dip"
+            android:paddingLeft="15.0dip"
+            android:paddingRight="15.0dip"
+            android:paddingTop="2.0dip"
+            android:drawableLeft="@drawable/password_login"
+            android:maxLines="1"
+            android:maxLength="12"
+            android:textColorHint="#ff999999"
+            android:textSize="16.0sp" />
+
+
+    </LinearLayout>
+
+
+    <Button android:id="@+id/pwd_set_submit_btn"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        style="@style/greenButton"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/shape"
+        android:text="确认提交" />
+
+    <LinearLayout  android:id="@+id/pwd_set_ok_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dip"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dip"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="20dip"
+            android:drawablePadding="3dip"
+            android:text="您的登录密码已经成功设置,请妥善保管。"
+            android:textSize="16sp"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/check_ok"/>
+
+        <Button android:id="@+id/login_in_btn"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            style="@style/greenButton"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/shape"
+            android:text="立即登录" />
+
+    </LinearLayout>
+
+</RelativeLayout>

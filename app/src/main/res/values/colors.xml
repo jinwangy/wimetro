@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <drawable name="none">#00000000</drawable>
+    <drawable name="background">#ffbf9c76</drawable>
+
+    <color name="black">#ff000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="gray">#eeeeee</color>
+    <color name="red">#d53131</color>
+    <color name="text_gray">#a1a1a1</color>
+
+    <color name="window_background">#f2f2f2</color>
+    <color name="window_background_white">#ffffff</color>
+    <color name="window_background_black">#000000</color>
+    <color name="header_bg">#00a2e7</color>
+    <color name="header_shadow">#dadada</color>
+    <color name="bg_header_button_active">#33eeeeee</color>
+
+    <color name="bg_input">#ffffff</color>
+    <color name="bg_input_border">#dadada</color>
+    <color name="bg_input_border_blue">#00b5cb</color>
+
+    <color name="bg_btn_green">#00a2e7</color>
+    <color name="bg_btn_green_active">#4c6c1d</color>
+    <color name="bg_btn_green_disable">#bfbfbf</color>
+    <color name="bg_btn_red">#0fc7d3</color>
+    <color name="bg_btn_red_active">#0f9aa3</color>
+    <color name="bg_btn_red_disable">#e5e5e5</color>
+    <color name="bg_btn_red_selected">#ab1c1c</color>
+    
+    <color name="darkgrey">#ff404040</color>
+    <color name="lightgrey">#ff888888</color>
+    <color name="light_blue">#6593cb</color>
+    <color name="bg_core_center_loading">#88000000</color>
+
+    <color name="versionchecklib_theme_color">#000000</color>
+    
+</resources>

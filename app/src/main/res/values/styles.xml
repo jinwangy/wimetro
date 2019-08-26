@@ -1,0 +1,107 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+     <!-- header 标题栏 -->
+    <style name="headerBgStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/header_height</item>
+        <item name="android:background">@color/header_bg</item>
+    </style>
+    
+    
+    <style name="headerTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>    
+       
+        <item name="android:textSize">@dimen/text_size_h3</item>
+    </style>
+
+    <style name="headerImageButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:background">@drawable/bg_header_button_selector</item>
+    </style>
+    
+     <style name="headerLeftBack">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+     
+        <item name="android:textSize">@dimen/text_size_h4</item>
+        <item name="android:layout_marginLeft">2dp</item>
+    </style>
+
+    <style name="headerButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">@drawable/bg_header_button_selector</item>
+        <item name="android:textColor">@color/bg_btn_red</item>
+        <item name="android:textSize">@dimen/text_size_h4</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+    </style>
+
+    <style name="headerButton.right">
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">0dp</item>
+    </style>
+
+    <style name="headerButton.left">
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_marginLeft">0dp</item>
+    </style>
+    
+    <style name="line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/bg_input_border</item>
+    </style>
+
+    <style name="line_vertical">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0.5dp</item>
+        <item name="android:background">@color/bg_input_border</item>
+    </style>
+    
+    <!-- 按钮 -->
+    <style name="baseButton">
+        <item name="android:textSize">@dimen/text_size_h3</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:paddingLeft">@dimen/padding_input_box_left</item>
+        <item name="android:paddingRight">@dimen/padding_input_box_left</item>
+        <item name="android:paddingTop">@dimen/padding_input_box_top</item>
+        <item name="android:paddingBottom">@dimen/padding_input_box_top</item>
+        <item name="android:gravity">center</item>
+    </style>
+    
+    <style name="greenButton" parent="baseButton">
+        <item name="android:background">@drawable/bg_btn_green_selector</item>
+    </style>
+
+
+
+</resources>

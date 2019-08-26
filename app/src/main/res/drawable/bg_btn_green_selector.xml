@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <!-- enabled -->
+    <item android:drawable="@drawable/bg_btn_green_enabled" android:state_enabled="true"/>
+    <!-- disEnabled -->
+    <item android:drawable="@drawable/bg_btn_green_disenabled" android:state_enabled="false"/>       "
+    <!-- pressed -->
+    <item android:drawable="@drawable/bg_btn_green_active" android:state_pressed="true"/>
+    <!-- focused -->
+    <item android:drawable="@drawable/bg_btn_green_active" android:state_focused="true"/>
+    <!-- selected -->
+    <item android:drawable="@drawable/bg_btn_green_active" android:state_selected="true"/>
+    <!-- default -->
+    <item android:drawable="@drawable/bg_btn_green"/>
+
+</selector>
